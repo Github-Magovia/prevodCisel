@@ -1,16 +1,18 @@
-<!DOCTYPE html>
-<html>
-<body>
+<div>
+  DECIMAL: <input [(ngModel)]="decimal"> <br><br>
 
-DEC: <input type="number" id="decCislo"> <br>
-BIN: <input type="radio" id="7" name="a" onclick="fun1()" value= "0111">7
-<input type="radio" id="6" name="a" onclick="fun2()" value="0110">6
-<input type="radio" id="5" name="a" onclick="fun3()" value="0101">5
-<input type="radio" id="4" name="a" onclick="fun4()" value= "0100">4
-<input type="radio" id="3" name="a" onclick="fun5()" value="0011">3
-<input type="radio" id="2" name="a" onclick="fun6()" value="0010">2
-<input type="radio" id="1" name="a" onclick="fun7()" value="0001">1
+  BINARY:
+  <input type="checkbox" id="1">
+  <input type="checkbox" id="2">
+  <input type="checkbox" id="3">
+  <input type="checkbox" id="4">
+  <input type="checkbox" id="5">
+  <input type="checkbox" id="6">
+  <input type="checkbox" id="7">
+  <input type="checkbox" id="8">
+  <br>
+  <br>
 
-
-</body>
-</html>
+  <!--<button (click)="dec2bin()">Stlač ma pre prevod z DEC to BIN</button>-->
+  {{decToBin()}}
+</div>
