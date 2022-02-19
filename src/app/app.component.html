@@ -1,18 +1,5 @@
-<div>
-  DECIMAL: <input [(ngModel)]="decimal"> <br><br>
+<form [formGroup]="convertor">
+  DECIMAL: <input formControlName="dec" min="0" max="255" (change)="toBin()"> <br><br>
+</form>
 
-  BINARY:
-  <input type="checkbox" id="1">
-  <input type="checkbox" id="2">
-  <input type="checkbox" id="3">
-  <input type="checkbox" id="4">
-  <input type="checkbox" id="5">
-  <input type="checkbox" id="6">
-  <input type="checkbox" id="7">
-  <input type="checkbox" id="8">
-  <br>
-  <br>
 
-  <!--<button (click)="dec2bin()">Stlač ma pre prevod z DEC to BIN</button>-->
-  {{decToBin()}}
-</div>
