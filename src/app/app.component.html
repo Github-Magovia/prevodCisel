@@ -1,5 +1,5 @@
 <form [formGroup]="convertor">
-  DECIMAL: <input formControlName="dec" min="0" max="255" (change)="toBin()"> <br><br>
+  DECIMAL: <input type="number" formControlName="dec" min="0" max="255" (change)="toBin()"> <br><br>
   BINARY:
   <pre> 7  6  5  4  3  2  1  0</pre>
   <input type="checkbox" formControlName="b7" (change)="toDec()">
